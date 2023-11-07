@@ -1,0 +1,16 @@
+Given a mixed array of number and string representations of integers, add up the non-string integers and subtract the total of the string integers.
+
+
+
+def div_con(x):
+    # your code here
+    numbers=0
+    words=0
+    for i in x:
+        if isinstance(i, int):
+            numbers += i
+        else:
+            words+= int(i)
+            
+    
+    return numbers-words
